@@ -6,9 +6,17 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script >
+    const button = document.getElementById("clickme")
+    const h1Tag = document.getElementsByTagName("h1")
+    button.addEventListener("click", function(){
+      button[0].textContent = "Clicked!"
+    })
+
+    </script>
 </head>
 <body>
     <h1>Omid Neshati</h1>
+    <button id="clickme"></button>
 </body>
 </html>
